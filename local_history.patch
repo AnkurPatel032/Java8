@@ -1,0 +1,16 @@
+Index: src/OddEvenNumber.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/OddEvenNumber.java b/src/OddEvenNumber.java
+--- a/src/OddEvenNumber.java	
++++ b/src/OddEvenNumber.java	(date 1708265228612)
+@@ -13,7 +13,6 @@
+         List<Integer> listOfIntegers = Arrays.asList(71, 18, 42, 21, 67, 32, 95, 14, 56, 87);
+         Map<Boolean, List<Integer>> oddEvenNumbersMap
+                 = listOfIntegers.stream().collect(Collectors.partitioningBy(i -> i % 2 == 0));
+-        Set<Entry<Boolean, List<Integer>>> entrySet = oddEvenNumbersMap.entrySet();
+         System.out.println("oddEvenNumbersMap:"+oddEvenNumbersMap);
+         // Extract the even and odd lists
+         List<Integer> evenNumbers = oddEvenNumbersMap.get(true);
